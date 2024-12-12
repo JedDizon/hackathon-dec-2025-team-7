@@ -1,14 +1,65 @@
-//logic:
+document.addEventListener("DOMContentLoaded", () => {
+
+// Global references to HTML elements
+let recipeTitle = document.getElementById("specific-recipe");
+let recipeIngredients = document.getElementById("recipe-ingredients");
+let recipeInstructions = document.getElementById("recipe-instructions");
+
+// Button event listener
+const recipeButton = document.getElementById("show-recipe");
+recipeButton.addEventListener("click", () => {
+    displayRecipe('panettone'); 
+ });
+
 /**
- * 1. On page load
- * 2. display recipe
- * 3. display link back to index
+ * Display Recipe Title
  */
+function loadRecipeTitle(title) {
+    recipeTitle.textContent = title;
+}
 
+/**
+ * Display Recipe Ingredients list
+ */
+function loadRecipeIngredients(ingredients) {
+    recipeIngredients.innerHTML = ""; // Clear previous content
+    ingredients.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        recipeIngredients.appendChild(li);
+    });
+}
 
+/**
+ * Display Recipe Instructions
+ */
+function loadRecipeInstructions(instructions) {
+    recipeInstructions.innerHTML = ""; // Clear previous content
+    instructions.forEach((step, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${index + 1}. ${step}`;
+        recipeInstructions.appendChild(li);
+    });
+}
 
+/**
+ * Display the Specific Recipe
+ */
+function displayRecipe(recipeKey) {
+    const recipe = recipes[recipeKey]; // Get the recipe by key
+    if (!recipe) {
+        console.error(`Recipe "${recipeKey}" not found.`);
+        recipeTitle.textContent = "Recipe Not Found!";
+        return;
+    }
+    loadRecipeTitle(recipe.name); // Load title
+    loadRecipeIngredients(recipe.ingredients); // Load ingredients
+    loadRecipeInstructions(recipe.instructions); // Load instructions
+}
 
-//Recipe lists
+/**
+ * Recipe lists
+ */
 const recipes = {
     panettone: {
         name: "Panettone",
@@ -130,3 +181,4 @@ const recipes = {
     }
 };
 
+})

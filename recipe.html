@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Style-->
+    <link rel="stylesheet" href="assets/css/recipe.css">
+
     <title>ADVENT CALENDAR TITLE PENDING</title>
 </head>
 <body>
-    
+     <!--Header-->
+     <header>
+        <h2>Recipes</h2>
+    </header>
+    <!--Main-->
+    <main>
+        <section class="recipe-area hidden">
+            <h2 id="recipe-title">Recipe</h2>
+            <div class="recipe-title-area" id="specific-recipe"></div>
+            <div class="ingredients-area">
+                <h3>Ingredients</h3>
+                <ul id="recipe-ingredients"></ul>
+            </div>
+            <div class="recipe-instructions-area">
+                <h3>Instructions</h3>
+                <ol id="recipe-instructions"></ol>
+            </div>
+        </section>
+        <button id="show-recipe">Show Recipe</button>
+    </main>
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--Scripts-->
+    <script src="assets/js/recipe.js"></script>
 </body>
 </html>

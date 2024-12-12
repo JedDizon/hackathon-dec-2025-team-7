@@ -4,6 +4,10 @@
     margin: 20px 0;
 }
 
+.hidden {
+    display: none;
+}
+
 header {
     background-color: green;
 }

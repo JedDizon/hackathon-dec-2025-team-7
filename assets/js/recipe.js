@@ -69,6 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
             recipeImage.style.display = "none";
         }
 
+        //Remove & add hidden class
+        const hiddenRemoval = document.getElementById("recipe-section")
+        hiddenRemoval.classList.remove("hidden"); //remove hidden class to show recipe
+        const hiddenAddition = document.getElementById("show-recipe")
+        hiddenAddition.classList.add("hidden"); //add hidden class to remove button after clicked by user
+
     }
 
     /**

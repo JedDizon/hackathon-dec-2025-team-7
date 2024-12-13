@@ -1,5 +1,4 @@
 import React from 'react';
-import "../assets/styles/HomeDoors.css";
 
 const Doors = () => {
     const handleClick = (day) => {

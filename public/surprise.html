@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENT CALENDAR TITLE PENDING</title>
-    
+
 </head>
 
 <body>
@@ -48,11 +48,19 @@
 
         // Check if the type is 'recipe' or 'trivia' and display accordingly
         if (surpriseData.type === "recipe") {
-            // If it's a recipe, display the recipe details
+            // Recipe name
             const nameElement = document.createElement('h3');
             nameElement.textContent = surpriseData.name || 'No name provided';
             popupContent.appendChild(nameElement);
 
+            //recipe image
+            const imageElement = document.createElement('img');
+            imageElement.src = surpriseData.image[0];
+            imageElement.alt = surpriseData.name;
+            imageElement.style.maxWidth = "100%";
+            popupContent.appendChild(imageElement);
+
+            //recipe ingredients
             const ingredientsElement = document.createElement('h4');
             ingredientsElement.textContent = 'Ingredients:';
             popupContent.appendChild(ingredientsElement);
@@ -65,6 +73,7 @@
             });
             popupContent.appendChild(ingredientsList);
 
+            //recipe instructions
             const instructionsElement = document.createElement('h4');
             instructionsElement.textContent = 'Instructions:';
             popupContent.appendChild(instructionsElement);
@@ -77,16 +86,9 @@
             });
             popupContent.appendChild(instructionsList);
 
-            // Optionally, display the image (if provided)
-            if (surpriseData.image && surpriseData.image.length > 0) {
-                const imageElement = document.createElement('img');
-                imageElement.src = surpriseData.image[0]; // Assuming a single image for simplicity
-                imageElement.alt = surpriseData.name;
-                imageElement.style.maxWidth = "100%";
-                popupContent.appendChild(imageElement);
-            }
+
         } else if (surpriseData.type === "trivia") {
-            // If it's trivia, display the trivia details
+            // display the trivia details
             const nameElement = document.createElement('h3');
             nameElement.textContent = surpriseData.name || 'No name provided';
             popupContent.appendChild(nameElement);

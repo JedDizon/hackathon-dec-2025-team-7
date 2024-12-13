@@ -11,6 +11,53 @@
     </div>
 </body>
 <!--Script-->
-<script src="../src/surprises.json"></script>
+<script>
+    // Fetch the JSON data
+    fetch("../src/surprises.json")
+        .then(response => {
+            // Check if the response is ok (status 200-299)
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();  // Parse the JSON data from the response
+        })
+        .then(data => {
+            // Once data is fetched, pass it to a function to display it
+            populateItems(data);
+        })
+        .catch(error => {
+            // Handle errors here (e.g., file not found, bad data)
+            console.error('There was a problem with the fetch operation:', error);
+        });
+
+    // Function to populate items in the HTML
+    function populateItems(data) {
+        const displayContainer = document.getElementById('display-items');
+        // Loop through the data and create elements based on it
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                const item = data[key];
+                // Create a new div for each item
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('item');
+                
+                // Add the name or type (you can customize based on the JSON structure)
+                const itemTitle = document.createElement('h3');
+                itemTitle.textContent = item.name || item.type;  // Use name if available, otherwise type
+
+                // Create a description (for example, showing ingredients or details)
+                const itemDetails = document.createElement('p');
+                itemDetails.textContent = item.details ? item.details[0] : 'No details available';
+
+                // Append the elements to the div
+                itemDiv.appendChild(itemTitle);
+                itemDiv.appendChild(itemDetails);
+
+                // Append the item div to the display container
+                displayContainer.appendChild(itemDiv);
+            }
+        }
+    }
+</script>
 <script src="../src/js/populatePopup.js"></script>
 </html>

@@ -2,10 +2,13 @@ import React from 'react';
 
 const Doors = () => {
 
+    const today = new Date();
+    const currentDay = today.getDate();
+
     const handleClick = (event, day) => {
         const button = event.target;
 
-        if(button.dataset.clicked === "false") {
+        if(button.dataset.clicked === "false" && day <= currentDay) {
             button.dataset.clicked = "true";
             button.classList.add("opened");
         }

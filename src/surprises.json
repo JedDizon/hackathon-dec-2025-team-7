@@ -1,440 +1,456 @@
 {
-    "surprises": {
-        "recipes": {
-            "recipe1": {
-                "name": "Panettone",
-                "ingredients": [
-                    "500g all-purpose flour",
-                    "100g sugar",
-                    "10g dry yeast",
-                    "150ml milk, warm",
-                    "4 eggs",
-                    "150g butter, softened",
-                    "100g raisins",
-                    "100g candied orange peel",
-                    "1 tsp vanilla extract",
-                    "Pinch of salt"
-                ],
-                "instructions": [
-                    "In a small bowl, dissolve the yeast in warm milk and let it sit for about 10 minutes until frothy.",
-                    "In a large mixing bowl, combine flour, sugar, and salt. Add the yeast mixture, eggs, softened butter, and vanilla extract. Mix until combined, then knead for about 10 minutes until the dough is smooth and elastic.",
-                    "Gently fold in the raisins and candied orange peel until evenly distributed. Cover the bowl with a clean cloth and let the dough rise in a warm place until doubled in size, about 1.5–2 hours.",
-                    "Punch down the dough and shape it into a round ball. Place it into a panettone mold or a tall, round baking pan. Cover and let it rise again for another hour.",
-                    "Preheat your oven to 180°C (350°F). Bake the panettone for 35 to 40 minutes, or until golden brown and a skewer inserted into the center comes out clean.",
-                    "Allow the panettone to cool completely before slicing and serving."
-                ],
-                "image": [
-                    "public/images/pexels-tatianeherder-10530448.jpg"
-                ]
+    "1": {
+        "type": "recipe",
+        "name": "Panettone",
+        "ingredients": [
+            "500g all-purpose flour",
+            "100g sugar",
+            "10g dry yeast",
+            "150ml milk, warm",
+            "4 eggs",
+            "150g butter, softened",
+            "100g raisins",
+            "100g candied orange peel",
+            "1 tsp vanilla extract",
+            "Pinch of salt"
+        ],
+        "instructions": [
+            "In a small bowl, dissolve the yeast in warm milk and let it sit for about 10 minutes until frothy.",
+            "In a large mixing bowl, combine flour, sugar, and salt. Add the yeast mixture, eggs, softened butter, and vanilla extract. Mix until combined, then knead for about 10 minutes until the dough is smooth and elastic.",
+            "Gently fold in the raisins and candied orange peel until evenly distributed. Cover the bowl with a clean cloth and let the dough rise in a warm place until doubled in size, about 1.5–2 hours.",
+            "Punch down the dough and shape it into a round ball. Place it into a panettone mold or a tall, round baking pan. Cover and let it rise again for another hour.",
+            "Preheat your oven to 180°C (350°F). Bake the panettone for 35 to 40 minutes, or until golden brown and a skewer inserted into the center comes out clean.",
+            "Allow the panettone to cool completely before slicing and serving."
+        ],
+        "image": [
+            "public/images/pexels-tatianeherder-10530448.jpg"
+        ]
+    },
+    "2": {
+        "type": "trivia",
+        "name": [
+            "Iceland - The Yule Lads"
+        ],
+        "details": [
+            "Icelandic Christmas folklore features 13 mischievous trolls called the Yule Lads, who visit children on the 13 nights leading up to Christmas. Each Lad leaves small gifts or rotten potatoes in shoes, depending on the child's behavior, and has a unique personality, like Spoon-Licker or Door-Slammer."
+        ]
+    },
+    "3": {
+        "type": "quiz",
+        "question": [
+            "Which country is the origin of the tradition of the Christmas tree?"
+        ],
+        "answers": [
+            {
+                "text": "United States",
+                "correct": false
             },
-            "recipe2": {
-                "name": "Lebkuchen",
-                "ingredients": [
-                    "250g honey",
-                    "100g sugar",
-                    "100g butter",
-                    "400g flour",
-                    "2 tsp baking powder",
-                    "2 tsp ground cinnamon",
-                    "1 tsp ground cloves",
-                    "1 tsp ground ginger",
-                    "1 egg",
-                    "100g chopped almonds",
-                    "Optional: icing sugar or chocolate glaze"
-                ],
-                "instructions": [
-                    "In a saucepan, combine honey, sugar, and butter. Heat over low heat, stirring until everything is melted and combined. Let the mixture cool to room temperature.",
-                    "In a large bowl, sift together flour, baking powder, cinnamon, cloves, and ginger. Add the cooled honey mixture, egg, and chopped almonds. Mix until a dough forms.",
-                    "Wrap the dough in plastic wrap and refrigerate for at least 2 hours, or overnight for best results.",
-                    "Preheat the oven to 180°C (350°F). Roll out the dough on a floured surface to about 1cm thickness and cut into shapes using cookie cutters.",
-                    "Place the cookies on a baking sheet lined with parchment paper and bake for 10 to 12 minutes. Let them cool completely before glazing with icing or melted chocolate, if desired."
-                ],
-                "image": [
-                    "public/images/pexels-leefinvrede-29543318.jpg"
-                ]
+            {
+                "text": "Germany",
+                "correct": true
             },
-            "recipe3": {
-                "name": "Bibingka",
-                "ingredients": [
-                    "2 cups rice flour",
-                    "1 cup coconut milk",
-                    "3/4 cup sugar",
-                    "2 tsp baking powder",
-                    "2 eggs",
-                    "1/4 cup butter, melted",
-                    "Banana leaves (optional)",
-                    "Grated cheese and salted egg for topping"
-                ],
-                "instructions": [
-                    "Preheat your oven to 180°C (350°F). If using banana leaves, soften them by briefly heating them over an open flame or dipping them in boiling water. Line a round baking pan with the banana leaves.",
-                    "In a mixing bowl, whisk together rice flour, sugar, and baking powder. Add the coconut milk, eggs, and melted butter, and stir until the batter is smooth and well combined.",
-                    "Pour the batter into the prepared baking pan. Arrange slices of salted egg and grated cheese on top of the batter.",
-                    "Bake in the preheated oven for 20–25 minutes, or until the top is golden brown and a toothpick inserted into the center comes out clean.",
-                    "Let the bibingka cool slightly before serving. It's best enjoyed warm with additional butter or grated coconut, if desired."
-                ],
-                "image": [
-                    "public/images/bibinka.jpg"
-                ]
+            {
+                "text": "Norway",
+                "correct": false
             },
-            "recipe4": {
-                "name": "Irish Coffee",
-                "ingredients": [
-                    "1 cup hot brewed coffee",
-                    "1 shot (30ml) Irish whiskey",
-                    "1 tsp brown sugar",
-                    "Whipped cream"
-                ],
-                "instructions": [
-                    "Brew a strong cup of coffee and pour it into a heatproof mug, leaving some room at the top.",
-                    "Stir in the brown sugar until fully dissolved. Adjust the sweetness to your taste.",
-                    "Add a shot of Irish whiskey to the coffee and stir gently to combine.",
-                    "Top with a generous layer of whipped cream. Pour it over the back of a spoon to help it float on top.",
-                    "Serve immediately and enjoy while hot."
-                ],
-                "image": [
-                    "public/images/pexels-matreding-10725922.jpg"
-                ]
-            },
-            "recipe5": {
-                "name": "Eggnog",
-                "ingredients": [
-                    "4 large eggs",
-                    "1/2 cup sugar",
-                    "2 cups whole milk",
-                    "1 cup heavy cream",
-                    "1/2 cup rum or bourbon (optional)",
-                    "1 tsp vanilla extract",
-                    "Nutmeg for garnish"
-                ],
-                "instructions": [
-                    "In a medium saucepan, whisk together the eggs and sugar until smooth and pale.",
-                    "Slowly add the milk while whisking continuously to avoid lumps. Heat the mixture over medium-low heat, stirring constantly, until it thickens slightly and coats the back of a spoon. Do not let it boil.",
-                    "Remove the saucepan from heat and stir in the heavy cream, vanilla extract, and rum or bourbon if using.",
-                    "Transfer the eggnog to a pitcher and refrigerate for at least 2 hours, or until thoroughly chilled.",
-                    "Serve in glasses, topped with a sprinkle of freshly grated nutmeg."
-                ],
-                "image": [
-                    "public/images/pexels-jill-wellington-1638660-3309793.jpg"
-                ]
-            },
-            "recipe6": {
-                "name": "Hot Chocolate",
-                "ingredients": [
-                    "2 cups milk",
-                    "1/4 cup cocoa powder",
-                    "1/4 cup sugar",
-                    "1/2 cup dark chocolate, chopped",
-                    "1 tsp vanilla extract",
-                    "Whipped cream or marshmallows for topping"
-                ],
-                "instructions": [
-                    "In a medium saucepan, combine milk, cocoa powder, and sugar. Whisk until well mixed and heat over medium heat until the mixture is warm, but not boiling.",
-                    "Add the chopped dark chocolate and stir until it is completely melted and the mixture is smooth.",
-                    "Remove from heat and stir in the vanilla extract.",
-                    "Pour the hot chocolate into mugs and top with whipped cream or marshmallows. Serve immediately."
-                ],
-                "image": [
-                    "public/images/pexels-pixabay-33156.jpg"
-                ]
-            },
-            "recipe7": {
-                "name": "Yule Log",
-                "ingredients": [
-                    "200g dark chocolate",
-                    "4 eggs",
-                    "100g sugar",
-                    "100g flour",
-                    "1 tsp vanilla extract",
-                    "Pinch of salt",
-                    "250ml heavy cream",
-                    "50g powdered sugar",
-                    "1 tbsp cocoa powder"
-                ],
-                "instructions": [
-                    "Preheat your oven to 180°C (350°F). Grease and line a 20x30cm baking tray.",
-                    "Melt the chocolate in a heatproof bowl over a pan of simmering water, stirring until smooth. Let it cool slightly.",
-                    "In a separate bowl, whisk the eggs and sugar until thick and pale. Fold in the melted chocolate, followed by the flour, vanilla, and a pinch of salt.",
-                    "Pour the batter into the prepared tray and bake for 10-12 minutes, or until the sponge is firm to the touch.",
-                    "Remove from the oven and allow to cool slightly. Dust a clean tea towel with icing sugar, then turn the cake out onto the towel. Roll up the cake while still warm, with the towel inside, and let it cool completely.",
-                    "For the filling, whip the heavy cream and powdered sugar until stiff peaks form. Unroll the cake, spread with the whipped cream, and roll it up again.",
-                    "Transfer the log to a serving platter and dust with cocoa powder to serve."
-                ],
-                "image": [
-                    "public/images//pexels-ekaterina-bolovtsova-5702930.jpg"
-                ]
-            },
-            "recipe8": {
-                "name": "Mulled Wine",
-                "ingredients": [
-                    "1 bottle red wine",
-                    "1 orange, sliced",
-                    "4 cloves",
-                    "2 cinnamon sticks",
-                    "1 star anise",
-                    "1/4 cup sugar",
-                    "1/4 cup brandy (optional)"
-                ],
-                "instructions": [
-                    "Pour the wine into a saucepan and add the orange slices, cloves, cinnamon sticks, and star anise.",
-                    "Add the sugar and heat gently over low heat, stirring occasionally, until the sugar has dissolved.",
-                    "Let the wine simmer for 15-20 minutes, but do not let it boil.",
-                    "If desired, add brandy and stir to combine.",
-                    "Strain the mulled wine and serve hot, garnished with extra orange slices and cinnamon sticks if desired."
-                ],
-                "image": "public/images/pexels-george-dolgikh-551816-1666061.jpg"
+            {
+                "text": "Russia",
+                "correct": false
             }
-        },
-        "trivia": {
-            "trivia1": {
-                "name": [
-                    "Iceland - The Yule Lads"
-                ],
-                "details": [
-                    "Icelandic Christmas folklore features 13 mischievous trolls called the Yule Lads, who visit children on the 13 nights leading up to Christmas. Each Lad leaves small gifts or rotten potatoes in shoes, depending on the child's behavior, and has a unique personality, like Spoon-Licker or Door-Slammer."
-                ]
+        ]
+    },
+    "4": {
+        "type": "recipe",
+        "name": "Lebkuchen",
+        "ingredients": [
+            "250g honey",
+            "100g sugar",
+            "100g butter",
+            "400g flour",
+            "2 tsp baking powder",
+            "2 tsp ground cinnamon",
+            "1 tsp ground cloves",
+            "1 tsp ground ginger",
+            "1 egg",
+            "100g chopped almonds",
+            "Optional: icing sugar or chocolate glaze"
+        ],
+        "instructions": [
+            "In a saucepan, combine honey, sugar, and butter. Heat over low heat, stirring until everything is melted and combined. Let the mixture cool to room temperature.",
+            "In a large bowl, sift together flour, baking powder, cinnamon, cloves, and ginger. Add the cooled honey mixture, egg, and chopped almonds. Mix until a dough forms.",
+            "Wrap the dough in plastic wrap and refrigerate for at least 2 hours, or overnight for best results.",
+            "Preheat the oven to 180°C (350°F). Roll out the dough on a floured surface to about 1cm thickness and cut into shapes using cookie cutters.",
+            "Place the cookies on a baking sheet lined with parchment paper and bake for 10 to 12 minutes. Let them cool completely before glazing with icing or melted chocolate, if desired."
+        ],
+        "image": [
+            "public/images/pexels-leefinvrede-29543318.jpg"
+        ]
+    },
+    "5": {
+        "type": "trivia",
+        "name": [
+            "Philippines - Giant Lantern Festival"
+        ],
+        "details": [
+            "In the city of San Fernando, the 'Christmas Capital of the Philippines,' the Giant Lantern Festival features intricate, illuminated lanterns up to 20 feet tall. These dazzling creations are a symbol of hope and are designed to outshine each other in an annual friendly competition."
+        ]
+    },
+    "6": {
+        "type": "quiz",
+        "question": [
+            "In which country do people celebrate La Nochebuena, a Christmas Eve celebration with a late-night dinner and family gatherings?"
+        ],
+        "answers": [
+            {
+                "text": "Italy",
+                "correct": false
             },
-            "trivia2": {
-                "name": [
-                    "Philippines - Giant Lantern Festival"
-                ],
-                "details": [
-                    "In the city of San Fernando, the 'Christmas Capital of the Philippines,' the Giant Lantern Festival features intricate, illuminated lanterns up to 20 feet tall. These dazzling creations are a symbol of hope and are designed to outshine each other in an annual friendly competition."
-                ]
+            {
+                "text": "Mexico",
+                "correct": false
             },
-            "trivia3": {
-                "name": [
-                    "Japan - KFC Christmas Dinner"
-                ],
-                "details": [
-                    "In Japan, Christmas isn't a traditional holiday, but thanks to a successful 1974 marketing campaign, eating Kentucky Fried Chicken has become a nationwide festive custom. Families often place their orders weeks in advance to ensure they can enjoy the special 'Christmas Party Barrel.'"
-                ]
+            {
+                "text": "Spain",
+                "correct": true
             },
-            "trivia4": {
-                "name": [
-                    "Mexico - Las Posadas"
-                ],
-                "details": [
-                    "During Las Posadas, celebrated from December 16 to 24, Mexican communities reenact Mary and Joseph's search for lodging before Jesus's birth. The processions, filled with singing and candlelight, end with festive celebrations featuring piñatas, food, and prayers."
-                ]
-            },
-            "trivia5": {
-                "name": [
-                    "Germany - The Christmas Pickle"
-                ],
-                "details": [
-                    "In Germany, some families hang a pickle-shaped ornament on the Christmas tree. The first child to find the pickle on Christmas morning is said to receive an extra gift or good luck for the coming year. This quirky tradition is also gaining popularity in other parts of the world."
-                ]
-            },
-            "trivia6": {
-                "name": [
-                    "Brazil - Réveillon and Fireworks"
-                ],
-                "details": [
-                    "In Brazil, New Year's Eve (Réveillon) is a huge celebration, and many people wear white clothing for good luck. Festivities include fireworks, music, and the tradition of jumping over seven waves in the ocean to bring luck and blessings for the new year."
-                ]
-            },
-            "trivia7": {
-                "name": [
-                    "Australia - Christmas at the Beach"
-                ],
-                "details": [
-                    "In Australia, Christmas falls during the summer, so many people celebrate by having a BBQ at the beach, swimming, and enjoying the outdoors. The Christmas menu often includes seafood, and instead of snow, Aussies may see Christmas decorations featuring kangaroos and koalas."
-                ]
-            },
-            "trivia8": {
-                "name": [
-                    "Greece - The Kalikantzaroi"
-                ],
-                "details": [
-                    "In Greece, Christmas festivities are often overshadowed by the mischievous 'Kalikantzaroi,' goblin-like creatures who come out during the holiday season. Traditionally, they are said to torment families by playing pranks and causing trouble, but they are also thought to bring good luck if they are outwitted."
-                ]
+            {
+                "text": "France",
+                "correct": false
             }
-        },
-        "quiz": {
-            "question1": {
-                "question": [
-                    "Which country is the origin of the tradition of the Christmas tree?"
-                ],
-                "answers": [
-                    {
-                        "text": "United States",
-                        "correct": false
-                    },
-                    {
-                        "text": "Germany",
-                        "correct": true
-                    },
-                    {
-                        "text": "Norway",
-                        "correct": false
-                    },
-                    {
-                        "text": "Russia",
-                        "correct": false
-                    }
-                ]
+        ]
+    },
+    "7": {
+        "type": "recipe",
+        "name": "Bibingka",
+        "ingredients": [
+            "2 cups rice flour",
+            "1 cup coconut milk",
+            "3/4 cup sugar",
+            "2 tsp baking powder",
+            "2 eggs",
+            "1/4 cup butter, melted",
+            "Banana leaves (optional)",
+            "Grated cheese and salted egg for topping"
+        ],
+        "instructions": [
+            "Preheat your oven to 180°C (350°F). If using banana leaves, soften them by briefly heating them over an open flame or dipping them in boiling water. Line a round baking pan with the banana leaves.",
+            "In a mixing bowl, whisk together rice flour, sugar, and baking powder. Add the coconut milk, eggs, and melted butter, and stir until the batter is smooth and well combined.",
+            "Pour the batter into the prepared baking pan. Arrange slices of salted egg and grated cheese on top of the batter.",
+            "Bake in the preheated oven for 20–25 minutes, or until the top is golden brown and a toothpick inserted into the center comes out clean.",
+            "Let the bibingka cool slightly before serving. It's best enjoyed warm with additional butter or grated coconut, if desired."
+        ],
+        "image": [
+            "public/images/bibinka.jpg"
+        ]
+    },
+    "8": {
+        "type": "trivia",
+        "name": [
+            "Japan - KFC Christmas Dinner"
+        ],
+        "details": [
+            "In Japan, Christmas isn't a traditional holiday, but thanks to a successful 1974 marketing campaign, eating Kentucky Fried Chicken has become a nationwide festive custom. Families often place their orders weeks in advance to ensure they can enjoy the special 'Christmas Party Barrel.'"
+        ]
+    },
+    "9": {
+        "type": "quiz",
+        "question": [
+            "In the movie Home Alone, where does the McCallister family travel to for Christmas?"
+        ],
+        "answers": [
+            {
+                "text": "New York",
+                "correct": false
             },
-            "question2": {
-                "question": [
-                    "In which country do people celebrate La Nochebuena, a Christmas Eve celebration with a late-night dinner and family gatherings?"
-                ],
-                "answers": [
-                    {
-                        "text": "Italy",
-                        "correct": false
-                    },
-                    {
-                        "text": "Mexico",
-                        "correct": false
-                    },
-                    {
-                        "text": "Spain",
-                        "correct": true
-                    },
-                    {
-                        "text": "France",
-                        "correct": false
-                    }
-                ]
+            {
+                "text": "Paris",
+                "correct": true
             },
-            "question3": {
-                "question": [
-                    "In the movie Home Alone, where does the McCallister family travel to for Christmas?"
-                ],
-                "answers": [
-                    {
-                        "text": "New York",
-                        "correct": false
-                    },
-                    {
-                        "text": "Paris",
-                        "correct": true
-                    },
-                    {
-                        "text": "London",
-                        "correct": false
-                    },
-                    {
-                        "text": "Tokyo",
-                        "correct": false
-                    }
-                ]
+            {
+                "text": "London",
+                "correct": false
             },
-            "question4": {
-                "question": [
-                    "In Italy, what is the name of the kind-hearted witch who delivers gifts to children at Epiphany?"
-                ],
-                "answers": [
-                    {
-                        "text": "La Befana",
-                        "correct": true
-                    },
-                    {
-                        "text": "Santa Claus",
-                        "correct": false
-                    },
-                    {
-                        "text": "Father Christmas",
-                        "correct": false
-                    },
-                    {
-                        "text": "Krampus",
-                        "correct": false
-                    }
-                ]
-            },
-            "question5": {
-                "question": [
-                    "Which popular Christmas song was originally written for Thanksgiving?"
-                ],
-                "answers": [
-                    {
-                        "text": "Silent Night",
-                        "correct": false
-                    },
-                    {
-                        "text": "White Christmas",
-                        "correct": false
-                    },
-                    {
-                        "text": "Frosty the Snowman",
-                        "correct": false
-                    },
-                    {
-                        "text": "Jingle Bells",
-                        "correct": true
-                    }
-                ]
-            },
-            "question6": {
-                "question": [
-                    "What is the name of the fictional town in the movie The Polar Express?"
-                ],
-                "answers": [
-                    {
-                        "text": "North Pole",
-                        "correct": false
-                    },
-                    {
-                        "text": "Toyland",
-                        "correct": false
-                    },
-                    {
-                        "text": "Winter Wonderland",
-                        "correct": true
-                    },
-                    {
-                        "text": "Northville",
-                        "correct": false
-                    }
-                ]
-            },
-            "question7": {
-                "question": [
-                    "What is the name of the Scandinavian Christmas decoration that is believed to ward off evil spirits?"
-                ],
-                "answers": [
-                    {
-                        "text": "Tinsel",
-                        "correct": false
-                    },
-                    {
-                        "text": "Christmas Star",
-                        "correct": false
-                    },
-                    {
-                        "text": "Mistletoe",
-                        "correct": false
-                    },
-                    {
-                        "text": "Yule Goat",
-                        "correct": true
-                    }
-                ]
-            },
-            "question8": {
-                "question": [
-                    "What famous Christmas ballet is performed annually in many theaters around the world?"
-                ],
-                "answers": [
-                    {
-                        "text": "The Nutcracker",
-                        "correct": true
-                    },
-                    {
-                        "text": "Cinderella",
-                        "correct": false
-                    },
-                    {
-                        "text": "Swan Lake",
-                        "correct": false
-                    },
-                    {
-                        "text": "Sleeping Beauty",
-                        "correct": false
-                    }
-                ]
+            {
+                "text": "Tokyo",
+                "correct": false
             }
-        }
+        ]
+    },
+    "10": {
+        "type": "recipe",
+        "name": "Irish Coffee",
+        "ingredients": [
+            "1 cup hot brewed coffee",
+            "1 shot (30ml) Irish whiskey",
+            "1 tsp brown sugar",
+            "Whipped cream"
+        ],
+        "instructions": [
+            "Brew a strong cup of coffee and pour it into a heatproof mug, leaving some room at the top.",
+            "Stir in the brown sugar until fully dissolved. Adjust the sweetness to your taste.",
+            "Add a shot of Irish whiskey to the coffee and stir gently to combine.",
+            "Top with a generous layer of whipped cream. Pour it over the back of a spoon to help it float on top.",
+            "Serve immediately and enjoy while hot."
+        ],
+        "image": [
+            "public/images/pexels-matreding-10725922.jpg"
+        ]
+    },
+    "11": {
+        "type": "trivia",
+        "name": [
+            "Mexico - Las Posadas"
+        ],
+        "details": [
+            "During Las Posadas, celebrated from December 16 to 24, Mexican communities reenact Mary and Joseph's search for lodging before Jesus's birth. The processions, filled with singing and candlelight, end with festive celebrations featuring piñatas, food, and prayers."
+        ]
+    },
+    "12": {
+        "type": "quiz",
+        "question": [
+            "In Italy, what is the name of the kind-hearted witch who delivers gifts to children at Epiphany?"
+        ],
+        "answers": [
+            {
+                "text": "La Befana",
+                "correct": true
+            },
+            {
+                "text": "Santa Claus",
+                "correct": false
+            },
+            {
+                "text": "Father Christmas",
+                "correct": false
+            },
+            {
+                "text": "Krampus",
+                "correct": false
+            }
+        ]
+    },
+    "13": {
+        "type": "recipe",
+        "name": "Eggnog",
+        "ingredients": [
+            "4 large eggs",
+            "1/2 cup sugar",
+            "2 cups whole milk",
+            "1 cup heavy cream",
+            "1/2 cup rum or bourbon (optional)",
+            "1 tsp vanilla extract",
+            "Nutmeg for garnish"
+        ],
+        "instructions": [
+            "In a medium saucepan, whisk together the eggs and sugar until smooth and pale.",
+            "Slowly add the milk while whisking continuously to avoid lumps. Heat the mixture over medium-low heat, stirring constantly, until it thickens slightly and coats the back of a spoon. Do not let it boil.",
+            "Remove the saucepan from heat and stir in the heavy cream, vanilla extract, and rum or bourbon if using.",
+            "Transfer the eggnog to a pitcher and refrigerate for at least 2 hours, or until thoroughly chilled.",
+            "Serve in glasses, topped with a sprinkle of freshly grated nutmeg."
+        ],
+        "image": [
+            "public/images/pexels-jill-wellington-1638660-3309793.jpg"
+        ]
+    },
+    "14": {
+        "type": "trivia",
+        "name": [
+            "Germany - The Christmas Pickle"
+        ],
+        "details": [
+            "In Germany, some families hang a pickle-shaped ornament on the Christmas tree. The first child to find the pickle on Christmas morning is said to receive an extra gift or good luck for the coming year. This quirky tradition is also gaining popularity in other parts of the world."
+        ]
+    },
+    "15": {
+        "type": "quiz",
+        "question": [
+            "Which popular Christmas song was originally written for Thanksgiving?"
+        ],
+        "answers": [
+            {
+                "text": "Silent Night",
+                "correct": false
+            },
+            {
+                "text": "White Christmas",
+                "correct": false
+            },
+            {
+                "text": "Frosty the Snowman",
+                "correct": false
+            },
+            {
+                "text": "Jingle Bells",
+                "correct": true
+            }
+        ]
+    },
+    "16": {
+        "type": "recipe",
+        "name": "Hot Chocolate",
+        "ingredients": [
+            "2 cups milk",
+            "1/4 cup cocoa powder",
+            "1/4 cup sugar",
+            "1/2 cup dark chocolate, chopped",
+            "1 tsp vanilla extract",
+            "Whipped cream or marshmallows for topping"
+        ],
+        "instructions": [
+            "In a medium saucepan, combine milk, cocoa powder, and sugar. Whisk until well mixed and heat over medium heat until the mixture is warm, but not boiling.",
+            "Add the chopped dark chocolate and stir until it is completely melted and the mixture is smooth.",
+            "Remove from heat and stir in the vanilla extract.",
+            "Pour the hot chocolate into mugs and top with whipped cream or marshmallows. Serve immediately."
+        ],
+        "image": [
+            "public/images/pexels-pixabay-33156.jpg"
+        ]
+    },
+    "17": {
+        "type": "trivia",
+        "name": [
+            "Brazil - Réveillon and Fireworks"
+        ],
+        "details": [
+            "In Brazil, New Year's Eve (Réveillon) is a huge celebration, and many people wear white clothing for good luck. Festivities include fireworks, music, and the tradition of jumping over seven waves in the ocean to bring luck and blessings for the new year."
+        ]
+    },
+    "18": {
+        "type": "quiz",
+        "question": [
+            "What is the name of the fictional town in the movie The Polar Express?"
+        ],
+        "answers": [
+            {
+                "text": "North Pole",
+                "correct": false
+            },
+            {
+                "text": "Toyland",
+                "correct": false
+            },
+            {
+                "text": "Winter Wonderland",
+                "correct": true
+            },
+            {
+                "text": "Northville",
+                "correct": false
+            }
+        ]
+    },
+    "19": {
+        "type": "recipe",
+        "name": "Yule Log",
+        "ingredients": [
+            "200g dark chocolate",
+            "4 eggs",
+            "100g sugar",
+            "100g flour",
+            "1 tsp vanilla extract",
+            "Pinch of salt",
+            "250ml heavy cream",
+            "50g powdered sugar",
+            "1 tbsp cocoa powder"
+        ],
+        "instructions": [
+            "Preheat your oven to 180°C (350°F). Grease and line a 20x30cm baking tray.",
+            "Melt the chocolate in a heatproof bowl over a pan of simmering water, stirring until smooth. Let it cool slightly.",
+            "In a separate bowl, whisk the eggs and sugar until thick and pale. Fold in the melted chocolate, followed by the flour, vanilla, and a pinch of salt.",
+            "Pour the batter into the prepared tray and bake for 10-12 minutes, or until the sponge is firm to the touch.",
+            "Remove from the oven and allow to cool slightly. Dust a clean tea towel with icing sugar, then turn the cake out onto the towel. Roll up the cake while still warm, with the towel inside, and let it cool completely.",
+            "For the filling, whip the heavy cream and powdered sugar until stiff peaks form. Unroll the cake, spread with the whipped cream, and roll it up again.",
+            "Transfer the log to a serving platter and dust with cocoa powder to serve."
+        ],
+        "image": [
+            "public/images//pexels-ekaterina-bolovtsova-5702930.jpg"
+        ]
+    },
+    "20": {
+        "type": "trivia",
+        "name": [
+            "Australia - Christmas at the Beach"
+        ],
+        "details": [
+            "In Australia, Christmas falls during the summer, so many people celebrate by having a BBQ at the beach, swimming, and enjoying the outdoors. The Christmas menu often includes seafood, and instead of snow, Aussies may see Christmas decorations featuring kangaroos and koalas."
+        ]
+    },
+    "21": {
+        "type": "quiz",
+        "question": [
+            "What is the name of the Scandinavian Christmas decoration that is believed to ward off evil spirits?"
+        ],
+        "answers": [
+            {
+                "text": "Tinsel",
+                "correct": false
+            },
+            {
+                "text": "Christmas Star",
+                "correct": false
+            },
+            {
+                "text": "Mistletoe",
+                "correct": false
+            },
+            {
+                "text": "Yule Goat",
+                "correct": true
+            }
+        ]
+    },
+    "22": {
+        "type": "recipe",
+        "name": "Mulled Wine",
+        "ingredients": [
+            "1 bottle red wine",
+            "1 orange, sliced",
+            "4 cloves",
+            "2 cinnamon sticks",
+            "1 star anise",
+            "1/4 cup sugar",
+            "1/4 cup brandy (optional)"
+        ],
+        "instructions": [
+            "Pour the wine into a saucepan and add the orange slices, cloves, cinnamon sticks, and star anise.",
+            "Add the sugar and heat gently over low heat, stirring occasionally, until the sugar has dissolved.",
+            "Let the wine simmer for 15-20 minutes, but do not let it boil.",
+            "If desired, add brandy and stir to combine.",
+            "Strain the mulled wine and serve hot, garnished with extra orange slices and cinnamon sticks if desired."
+        ],
+        "image": "public/images/pexels-george-dolgikh-551816-1666061.jpg"
+    },
+    "23": {
+        "type": "trivia",
+        "name": [
+            "Greece - The Kalikantzaroi"
+        ],
+        "details": [
+            "In Greece, Christmas festivities are often overshadowed by the mischievous 'Kalikantzaroi,' goblin-like creatures who come out during the holiday season. Traditionally, they are said to torment families by playing pranks and causing trouble, but they are also thought to bring good luck if they are outwitted."
+        ]
+    },
+    "24": {
+        "type": "quiz",
+        "question": [
+            "What famous Christmas ballet is performed annually in many theaters around the world?"
+        ],
+        "answers": [
+            {
+                "text": "The Nutcracker",
+                "correct": true
+            },
+            {
+                "text": "Cinderella",
+                "correct": false
+            },
+            {
+                "text": "Swan Lake",
+                "correct": false
+            },
+            {
+                "text": "Sleeping Beauty",
+                "correct": false
+            }
+        ]
     }
 }

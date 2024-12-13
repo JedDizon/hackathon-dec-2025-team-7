@@ -1,3 +1,13 @@
+#recipe-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
 header {
     background-color: green;
 }

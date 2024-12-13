@@ -1,7 +1,15 @@
 import React from 'react';
 
 const Doors = () => {
-    const handleClick = (day) => {
+
+    const handleClick = (event, day) => {
+        const button = event.target;
+
+        if(button.dataset.clicked === "false") {
+            button.dataset.clicked = "true";
+            button.classList.add("opened");
+        }
+
         console.log("You clicked me on day:", day);
     }
 
@@ -10,7 +18,7 @@ const Doors = () => {
     return (
         <div className="doors">
             {days.map(day => (
-                <button key={day} onClick={() => handleClick(day)} className='door'>
+                <button key={day} onClick={(event) => handleClick(event, day)} className="door" data-clicked="false">
                     {day}
                 </button>
             ))}

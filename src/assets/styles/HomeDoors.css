@@ -1,8 +1,26 @@
+/* background style */
 .home{
 }
 
+/* style for the container of the doors */
 .doors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* style for the door/button when it is not clicked */
 .door {
+    width: 100px;
+    height: 120px;
+    background-color: #f4f4f4;
+    color: black;
+    margin: 10px;
+}
+
+/* style for the door/button when it is clicked */
+.opened {
+    background-color: brown;
 }

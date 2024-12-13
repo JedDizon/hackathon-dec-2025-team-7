@@ -1,63 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENT CALENDAR TITLE PENDING</title>
 </head>
+
 <body>
-    <div class="display-items" id="display-items">
-        
+    <div class="calendar" id="calendar"></div> <!-- Placeholder for days -->
+
+    <div class="popup" id="popup">
+        <div id="popup-content"></div>
+        <button class="popup-close" onclick="closePopup()">Close</button>
     </div>
 </body>
-<!--Script-->
+
+<!--script-->
 <script>
-    // Fetch the JSON data
+    // Fetch the JSON file
     fetch("../src/surprises.json")
-        .then(response => {
-            // Check if the response is ok (status 200-299)
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();  // Parse the JSON data from the response
-        })
+        .then(response => response.json())
         .then(data => {
-            // Once data is fetched, pass it to a function to display it
-            populateItems(data);
+            // Populate the Advent calendar
+            populateCalendar(data);
         })
         .catch(error => {
-            // Handle errors here (e.g., file not found, bad data)
-            console.error('There was a problem with the fetch operation:', error);
+            console.error('Error fetching the JSON file:', error);
         });
 
-    // Function to populate items in the HTML
-    function populateItems(data) {
-        const displayContainer = document.getElementById('display-items');
-        // Loop through the data and create elements based on it
-        for (const key in data) {
-            if (data.hasOwnProperty(key)) {
-                const item = data[key];
-                // Create a new div for each item
-                const itemDiv = document.createElement('div');
-                itemDiv.classList.add('item');
-                
-                // Add the name or type (you can customize based on the JSON structure)
-                const itemTitle = document.createElement('h3');
-                itemTitle.textContent = item.name || item.type;  // Use name if available, otherwise type
-
-                // Create a description (for example, showing ingredients or details)
-                const itemDetails = document.createElement('p');
-                itemDetails.textContent = item.details ? item.details[0] : 'No details available';
-
-                // Append the elements to the div
-                itemDiv.appendChild(itemTitle);
-                itemDiv.appendChild(itemDetails);
-
-                // Append the item div to the display container
-                displayContainer.appendChild(itemDiv);
-            }
+    // Function to populate the calendar with days
+    function populateCalendar(data) {
+        const calendarContainer = document.getElementById('calendar');
+        for (let day = 1; day <= 24; day++) {
+            const dayButton = document.createElement('div');
+            dayButton.classList.add('day');
+            dayButton.textContent = day;  // Display the day number
+            dayButton.onclick = () => showPopup(day, data[day]);
+            calendarContainer.appendChild(dayButton);
         }
     }
+
+    // Function to show the popup with the surprise for the clicked day
+    function showPopup(day, surpriseData) {
+        const popupContent = document.getElementById('popup-content');
+        popupContent.innerHTML = ''; // Clear any previous content
+
+        // Check if the type is 'recipe' or 'trivia' and display accordingly
+        if (surpriseData.type === "recipe") {
+            // If it's a recipe, display the recipe details
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = surpriseData.name || 'No name provided';
+            popupContent.appendChild(nameElement);
+
+            const ingredientsElement = document.createElement('h4');
+            ingredientsElement.textContent = 'Ingredients:';
+            popupContent.appendChild(ingredientsElement);
+
+            const ingredientsList = document.createElement('ul');
+            surpriseData.ingredients.forEach(ingredient => {
+                const li = document.createElement('li');
+                li.textContent = ingredient;
+                ingredientsList.appendChild(li);
+            });
+            popupContent.appendChild(ingredientsList);
+
+            const instructionsElement = document.createElement('h4');
+            instructionsElement.textContent = 'Instructions:';
+            popupContent.appendChild(instructionsElement);
+
+            const instructionsList = document.createElement('ol');
+            surpriseData.instructions.forEach(instruction => {
+                const li = document.createElement('li');
+                li.textContent = instruction;
+                instructionsList.appendChild(li);
+            });
+            popupContent.appendChild(instructionsList);
+
+            // Optionally, display the image (if provided)
+            if (surpriseData.image && surpriseData.image.length > 0) {
+                const imageElement = document.createElement('img');
+                imageElement.src = surpriseData.image[0]; // Assuming a single image for simplicity
+                imageElement.alt = surpriseData.name;
+                imageElement.style.maxWidth = "100%";
+                popupContent.appendChild(imageElement);
+            }
+        } else if (surpriseData.type === "trivia") {
+            // If it's trivia, display the trivia details
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = surpriseData.name || 'No name provided';
+            popupContent.appendChild(nameElement);
+
+            const detailsElement = document.createElement('p');
+            detailsElement.textContent = surpriseData.details ? surpriseData.details[0] : 'No details available';
+            popupContent.appendChild(detailsElement);
+        } else {
+            // Handle unexpected type (if needed)
+            popupContent.innerHTML = '<p>Content not available for this day.</p>';
+        }
+
+        // Show the popup
+        const popup = document.getElementById('popup');
+        popup.classList.add('active');
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.classList.remove('active');
+    }
 </script>
-<script src="../src/js/populatePopup.js"></script>
+
 </html>

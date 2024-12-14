@@ -28,6 +28,9 @@ function showPopup(day, surpriseData) {
 
     // Check if the type is 'recipe' or 'trivia' and display accordingly
     if (surpriseData.type === "recipe") {
+        // recipe-specific class
+        popupContent.className = 'recipe-content';
+
         // Recipe name
         const nameElement = document.createElement('h3');
         nameElement.textContent = surpriseData.name || 'No name provided';
@@ -39,6 +42,8 @@ function showPopup(day, surpriseData) {
         imageElement.alt = surpriseData.name;
         imageElement.style.maxWidth = "100%";
         popupContent.appendChild(imageElement);
+        //recipe image class
+        imageElement.className = 'recipe-image';
 
         //recipe ingredients
         const ingredientsElement = document.createElement('h4');
@@ -68,6 +73,9 @@ function showPopup(day, surpriseData) {
 
 
     } else if (surpriseData.type === "trivia") {
+        // trivia-specific class
+        popupContent.className = 'trivia-content';
+
         // display the trivia details
         const nameElement = document.createElement('h3');
         nameElement.textContent = surpriseData.name || 'No name provided';
@@ -76,8 +84,52 @@ function showPopup(day, surpriseData) {
         const detailsElement = document.createElement('p');
         detailsElement.textContent = surpriseData.details ? surpriseData.details[0] : 'No details available';
         popupContent.appendChild(detailsElement);
-    } else {
-        // Handle unexpected type (if needed)
+
+    } else if (surpriseData.type === 'quiz') {
+        // quiz-specific class
+        popupContent.className = 'quiz-content';
+
+        // Display quiz question and answers
+        const questionElement = document.createElement('h3');
+        questionElement.textContent = surpriseData.question[0] || 'No question provided';
+        popupContent.appendChild(questionElement);
+
+        const answersList = document.createElement('div'); // Container for answer buttons
+        //quiz answer class
+        answersList.className = 'quiz-answers';
+        surpriseData.answers.forEach(answer => {
+            const answerButton = document.createElement('button');
+            answerButton.textContent = answer.text;
+            //quiz answer button class
+            answerButton.className = 'quiz-answer-button';
+            answerButton.style.margin = '5px';
+
+            answerButton.onclick = () => {
+                // Remove any previous classes from all buttons
+                const allButtons = answersList.querySelectorAll('button');
+                allButtons.forEach(btn => {
+                    btn.classList.remove('correct', 'incorrect');
+                    btn.disabled = true; // Disable all buttons after selection
+                });
+    
+                // Apply correct or incorrect class
+                if (answer.correct) {
+                    alert('Correct answer! 🎉');
+                    answerButton.classList.add('correct');
+                } else {
+                    alert('Sorry, that’s incorrect. :(');
+                    answerButton.classList.add('incorrect');
+                }
+            };
+
+
+            answersList.appendChild(answerButton);
+        });
+        popupContent.appendChild(answersList);
+    }
+
+    else {
+        // Handle unexpected type 
         popupContent.innerHTML = '<p>Content not available for this day.</p>';
     }
 
@@ -85,3 +137,15 @@ function showPopup(day, surpriseData) {
     const popup = document.getElementById('popup');
     popup.classList.add('active');
 }
+
+/**
+ * Class lists:
+ * .recipe-content
+ * .recipe-image
+ * .trivia-content
+ * .quiz-content
+ * .quiz-answers
+ * .quiz-answer-button
+ * .correct
+ * .incorrect
+ */

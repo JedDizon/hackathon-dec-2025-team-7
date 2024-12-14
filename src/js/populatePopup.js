@@ -1,99 +1,87 @@
-console.log("populatepopup linked")
-
-document.addEventListener("DOMContentLoaded", () => {
-
-
-    // Global references to HTML elements
-    let recipeTitle = document.getElementById("specific-recipe");
-    let recipeIngredients = document.getElementById("recipe-ingredients");
-    let recipeInstructions = document.getElementById("recipe-instructions");
-
-
-    // Button event listener
-    const recipeButton = document.getElementById("show-recipe");
-    recipeButton.addEventListener("click", () => {
-        displayRecipe('recipe1');
+// Fetch the JSON file
+fetch("../src/surprises.json")
+    .then(response => response.json())
+    .then(data => {
+        // Populate the Advent calendar
+        populateCalendar(data);
+    })
+    .catch(error => {
+        console.error('Error fetching the JSON file:', error);
     });
 
-
-
-
-
-
-    /**
-     * Display Recipe Title
-     */
-    function loadRecipeTitle(title) {
-        recipeTitle.textContent = title;
+// Function to populate the calendar with days
+function populateCalendar(data) {
+    const calendarContainer = document.getElementById('calendar');
+    for (let day = 1; day <= 24; day++) {
+        const dayButton = document.createElement('div');
+        dayButton.classList.add('day');
+        dayButton.textContent = day;  // Display the day number
+        dayButton.onclick = () => showPopup(day, data[day]);
+        calendarContainer.appendChild(dayButton);
     }
+}
 
+// Function to show the popup with the surprise for the clicked day
+function showPopup(day, surpriseData) {
+    const popupContent = document.getElementById('popup-content');
+    popupContent.innerHTML = ''; // Clear any previous content
 
-    /**
-     * Display Recipe Ingredients list
-     */
-    function loadRecipeIngredients(ingredients) {
-        recipeIngredients.innerHTML = ""; // Clear previous content
-        ingredients.forEach(item => {
-            const li = document.createElement("li");
-            li.textContent = item;
-            recipeIngredients.appendChild(li);
+    // Check if the type is 'recipe' or 'trivia' and display accordingly
+    if (surpriseData.type === "recipe") {
+        // Recipe name
+        const nameElement = document.createElement('h3');
+        nameElement.textContent = surpriseData.name || 'No name provided';
+        popupContent.appendChild(nameElement);
+
+        //recipe image
+        const imageElement = document.createElement('img');
+        imageElement.src = surpriseData.image[0];
+        imageElement.alt = surpriseData.name;
+        imageElement.style.maxWidth = "100%";
+        popupContent.appendChild(imageElement);
+
+        //recipe ingredients
+        const ingredientsElement = document.createElement('h4');
+        ingredientsElement.textContent = 'Ingredients:';
+        popupContent.appendChild(ingredientsElement);
+
+        const ingredientsList = document.createElement('ul');
+        surpriseData.ingredients.forEach(ingredient => {
+            const li = document.createElement('li');
+            li.textContent = ingredient;
+            ingredientsList.appendChild(li);
         });
-    }
+        popupContent.appendChild(ingredientsList);
 
+        //recipe instructions
+        const instructionsElement = document.createElement('h4');
+        instructionsElement.textContent = 'Instructions:';
+        popupContent.appendChild(instructionsElement);
 
-    /**
-     * Display Recipe Instructions
-     */
-    function loadRecipeInstructions(instructions) {
-        recipeInstructions.innerHTML = ""; // Clear previous content
-        instructions.forEach((step, index) => {
-            const li = document.createElement("li");
-            li.textContent = `${index + 1}. ${step}`;
-            recipeInstructions.appendChild(li);
+        const instructionsList = document.createElement('ol');
+        surpriseData.instructions.forEach(instruction => {
+            const li = document.createElement('li');
+            li.textContent = instruction;
+            instructionsList.appendChild(li);
         });
+        popupContent.appendChild(instructionsList);
+
+
+    } else if (surpriseData.type === "trivia") {
+        // display the trivia details
+        const nameElement = document.createElement('h3');
+        nameElement.textContent = surpriseData.name || 'No name provided';
+        popupContent.appendChild(nameElement);
+
+        const detailsElement = document.createElement('p');
+        detailsElement.textContent = surpriseData.details ? surpriseData.details[0] : 'No details available';
+        popupContent.appendChild(detailsElement);
+    } else {
+        // Handle unexpected type (if needed)
+        popupContent.innerHTML = '<p>Content not available for this day.</p>';
     }
 
-
-
-
-
-
-    /**
-     * Display the Specific Recipe
-     */
-    function displayRecipe(recipeKey) {
-        const recipe = recipes[recipeKey]; // Get the recipe by key
-        if (!recipe) {
-            console.error(`Recipe "${recipeKey}" not found.`);
-            recipeTitle.textContent = "Recipe Not Found!";
-            return;
-        }
-        loadRecipeTitle(recipe.name); // Load title
-        loadRecipeIngredients(recipe.ingredients); // Load ingredients
-        loadRecipeInstructions(recipe.instructions); // Load instructions
-
-
-        //Load image
-        const recipeImage = document.getElementById("recipe-image");
-        if (recipe.image) {
-            recipeImage.src = recipe.image;
-            recipeImage.style.display = "block";
-        } else {
-            recipeImage.style.display = "none";
-        }
-
-
-        //Remove & add hidden class
-        const hiddenRemoval = document.getElementById("recipe-section")
-        hiddenRemoval.classList.remove("hidden"); //remove hidden class to show recipe
-        const hiddenAddition = document.getElementById("show-recipe")
-        hiddenAddition.classList.add("hidden"); //add hidden class to remove button after clicked by user
-
-
-    }
-
-
-})
-
-
-
+    // Show the popup
+    const popup = document.getElementById('popup');
+    popup.classList.add('active');
+}

@@ -33,7 +33,7 @@ function App() {
     return (
         <>
         <Home />
-        <Doors updateDays={updateDays}/>
+        <Doors updateDays={updateDays} days={days}/>
         </>
     )
 }

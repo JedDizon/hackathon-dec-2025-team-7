@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Doors = ({ updateDays }) => {
+const Doors = ({ updateDays, days }) => {
 
     const today = new Date();
     const currentDay = today.getDate();
@@ -21,13 +21,18 @@ const Doors = ({ updateDays }) => {
 
     return (
         <div className="doors">
-            {daysOfMonth.map(day => (
-                <button key={day} onClick={
-                    (event) => handleClick(event, day)} 
-                    className="door" data-clicked="false">
-                    {day}
-                </button>
-            ))}
+            {daysOfMonth.map(day => {
+                const isOpened = days.includes(day);
+
+                return (
+                    <button key={day} 
+                    onClick={(event) => handleClick(event, day)} 
+                    className={`door ${isOpened ? 'opened' : ''}`} 
+                    data-clicked={isOpened ? "true" : "false"}> 
+                    {day} 
+                    </button>
+                )
+            })}
         </div>
     )
 }

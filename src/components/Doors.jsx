@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Doors = () => {
+const Doors = ({ updateDays }) => {
 
     const today = new Date();
     const currentDay = today.getDate();
@@ -10,18 +10,21 @@ const Doors = () => {
 
         if(button.dataset.clicked === "false" && day <= currentDay) {
             button.dataset.clicked = "true";
+            updateDays(day);
             button.classList.add("opened");
         }
 
         console.log("You clicked me on day:", day);
     }
 
-    const days = [...Array(24).keys()].map(i => i + 1);
+    const daysOfMonth = [...Array(24).keys()].map(i => i + 1);
 
     return (
         <div className="doors">
-            {days.map(day => (
-                <button key={day} onClick={(event) => handleClick(event, day)} className="door" data-clicked="false">
+            {daysOfMonth.map(day => (
+                <button key={day} onClick={
+                    (event) => handleClick(event, day)} 
+                    className="door" data-clicked="false">
                     {day}
                 </button>
             ))}

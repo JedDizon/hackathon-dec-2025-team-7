@@ -23,14 +23,12 @@
             "Allow the panettone to cool completely before slicing and serving."
         ],
         "image": [
-            "public/images/pexels-tatianeherder-10530448.jpg"
+            "../public/images/pexels-tatianeherder-10530448.jpg"
         ]
     },
     "2": {
         "type": "trivia",
-        "name": [
-            "Iceland - The Yule Lads"
-        ],
+        "name": "Iceland - The Yule Lads",
         "details": [
             "Icelandic Christmas folklore features 13 mischievous trolls called the Yule Lads, who visit children on the 13 nights leading up to Christmas. Each Lad leaves small gifts or rotten potatoes in shoes, depending on the child's behavior, and has a unique personality, like Spoon-Licker or Door-Slammer."
         ]
@@ -83,14 +81,12 @@
             "Place the cookies on a baking sheet lined with parchment paper and bake for 10 to 12 minutes. Let them cool completely before glazing with icing or melted chocolate, if desired."
         ],
         "image": [
-            "public/images/pexels-leefinvrede-29543318.jpg"
+            "../public/images/pexels-leefinvrede-29543318.jpg"
         ]
     },
     "5": {
         "type": "trivia",
-        "name": [
-            "Philippines - Giant Lantern Festival"
-        ],
+        "name": "Philippines - Giant Lantern Festival",
         "details": [
             "In the city of San Fernando, the 'Christmas Capital of the Philippines,' the Giant Lantern Festival features intricate, illuminated lanterns up to 20 feet tall. These dazzling creations are a symbol of hope and are designed to outshine each other in an annual friendly competition."
         ]
@@ -140,14 +136,12 @@
             "Let the bibingka cool slightly before serving. It's best enjoyed warm with additional butter or grated coconut, if desired."
         ],
         "image": [
-            "public/images/bibinka.jpg"
+            "../public/images/bibinka.jpg"
         ]
     },
     "8": {
         "type": "trivia",
-        "name": [
-            "Japan - KFC Christmas Dinner"
-        ],
+        "name": "Japan - KFC Christmas Dinner",
         "details": [
             "In Japan, Christmas isn't a traditional holiday, but thanks to a successful 1974 marketing campaign, eating Kentucky Fried Chicken has become a nationwide festive custom. Families often place their orders weeks in advance to ensure they can enjoy the special 'Christmas Party Barrel.'"
         ]
@@ -193,14 +187,12 @@
             "Serve immediately and enjoy while hot."
         ],
         "image": [
-            "public/images/pexels-matreding-10725922.jpg"
+            "../public/images/pexels-matreding-10725922.jpg"
         ]
     },
     "11": {
         "type": "trivia",
-        "name": [
-            "Mexico - Las Posadas"
-        ],
+        "name": "Mexico - Las Posadas",
         "details": [
             "During Las Posadas, celebrated from December 16 to 24, Mexican communities reenact Mary and Joseph's search for lodging before Jesus's birth. The processions, filled with singing and candlelight, end with festive celebrations featuring piñatas, food, and prayers."
         ]
@@ -249,14 +241,12 @@
             "Serve in glasses, topped with a sprinkle of freshly grated nutmeg."
         ],
         "image": [
-            "public/images/pexels-jill-wellington-1638660-3309793.jpg"
+            "../public/images/pexels-jill-wellington-1638660-3309793.jpg"
         ]
     },
     "14": {
         "type": "trivia",
-        "name": [
-            "Germany - The Christmas Pickle"
-        ],
+        "name": "Germany - The Christmas Pickle",
         "details": [
             "In Germany, some families hang a pickle-shaped ornament on the Christmas tree. The first child to find the pickle on Christmas morning is said to receive an extra gift or good luck for the coming year. This quirky tradition is also gaining popularity in other parts of the world."
         ]
@@ -303,14 +293,12 @@
             "Pour the hot chocolate into mugs and top with whipped cream or marshmallows. Serve immediately."
         ],
         "image": [
-            "public/images/pexels-pixabay-33156.jpg"
+            "../public/images/pexels-pixabay-33156.jpg"
         ]
     },
     "17": {
         "type": "trivia",
-        "name": [
-            "Brazil - Réveillon and Fireworks"
-        ],
+        "name": "Brazil - Réveillon and Fireworks",
         "details": [
             "In Brazil, New Year's Eve (Réveillon) is a huge celebration, and many people wear white clothing for good luck. Festivities include fireworks, music, and the tradition of jumping over seven waves in the ocean to bring luck and blessings for the new year."
         ]
@@ -363,14 +351,12 @@
             "Transfer the log to a serving platter and dust with cocoa powder to serve."
         ],
         "image": [
-            "public/images//pexels-ekaterina-bolovtsova-5702930.jpg"
+            "../public/images//pexels-ekaterina-bolovtsova-5702930.jpg"
         ]
     },
     "20": {
         "type": "trivia",
-        "name": [
-            "Australia - Christmas at the Beach"
-        ],
+        "name": "Australia - Christmas at the Beach",
         "details": [
             "In Australia, Christmas falls during the summer, so many people celebrate by having a BBQ at the beach, swimming, and enjoying the outdoors. The Christmas menu often includes seafood, and instead of snow, Aussies may see Christmas decorations featuring kangaroos and koalas."
         ]
@@ -418,13 +404,11 @@
             "If desired, add brandy and stir to combine.",
             "Strain the mulled wine and serve hot, garnished with extra orange slices and cinnamon sticks if desired."
         ],
-        "image": "public/images/pexels-george-dolgikh-551816-1666061.jpg"
+        "image": "../public/images/pexels-george-dolgikh-551816-1666061.jpg"
     },
     "23": {
         "type": "trivia",
-        "name": [
-            "Greece - The Kalikantzaroi"
-        ],
+        "name":  "Greece - The Kalikantzaroi",
         "details": [
             "In Greece, Christmas festivities are often overshadowed by the mischievous 'Kalikantzaroi,' goblin-like creatures who come out during the holiday season. Traditionally, they are said to torment families by playing pranks and causing trouble, but they are also thought to bring good luck if they are outwitted."
         ]

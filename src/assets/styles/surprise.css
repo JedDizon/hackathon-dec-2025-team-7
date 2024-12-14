@@ -1,0 +1,40 @@
+.recipe-image {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+.recipe-content {
+    background-color: aqua;
+}
+
+.trivia-content {
+    background-color: aquamarine;
+}
+.quiz-content {
+    background-color: bisque;
+}
+.quiz-answers {
+    background-color: blueviolet;
+}
+.quiz-answer-button {
+    background-color: chocolate;
+}
+
+.correct {
+    background-color: green;
+    color: aliceblue;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}

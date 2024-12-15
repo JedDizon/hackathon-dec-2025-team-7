@@ -1,6 +1,7 @@
 import React from 'react';
+import "../assets/styles/surprise.css";
 
-const Doors = ({ updateDays, days }) => {
+const Doors = ({ updateDays, days, onOpenPopup }) => {
 
     const today = new Date();
     const currentDay = today.getDate();
@@ -8,13 +9,13 @@ const Doors = ({ updateDays, days }) => {
     const handleClick = (event, day) => {
         const button = event.target;
 
+        onOpenPopup(day);
+
         if(button.dataset.clicked === "false" && day <= currentDay) {
             button.dataset.clicked = "true";
             updateDays(day);
             button.classList.add("opened");
         }
-
-        console.log("You clicked me on day:", day);
     }
 
     const daysOfMonth = [...Array(24).keys()].map(i => i + 1);

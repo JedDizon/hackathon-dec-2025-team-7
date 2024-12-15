@@ -1,5 +1,4 @@
 import React from 'react';
-import { openDoor } from "../js/populatePopup";
 import "../assets/styles/surprise.css";
 
 const Doors = ({ updateDays, days, onOpenPopup }) => {

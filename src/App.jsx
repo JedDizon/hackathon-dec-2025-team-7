@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Home from "./components/Home";
 import Doors from "./components/Doors";
 import Popup from "./components/Popup";
-import "./assets/styles/HomeDoors.css";
+import "./assets/styles/surprise.css";
 
 function App() {
     const [days, setDays] = useState([]);

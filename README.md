@@ -28,7 +28,7 @@ This project was deployed on [Netlify](https://www.netlify.com/). The steps to d
 - Press *Deploy -repo name-* and wait until it has finished.
 
 The project is deployed and can be accessed at: 
-**https://countdown-to-xmas-2025.netlify.app**  
+**https://countdown-to-xmas-2024.netlify.app/**  
 
 ---
 
@@ -67,30 +67,28 @@ The **Goal** section provides a concise summary of the main objective or purpose
 ---
 
 ## **💻 Tech Stack**  
-- Frontend: HTML, CSS, JavaScript  
-- **Backend: Python, Flask** 
-- **Database: PostgreSQL**  
+- Frontend: HTML, CSS, React.js 
 - Version Control: Git & GitHub  
-- Deployment: Github 
+- Deployment: Netlify
 
 ---
 
 ## **🌟 Credits**  
 In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
-- Any tutorials or articles referenced  
-    - quiz on js < https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s >
-    - using json < https://www.youtube.com/watch?v=iiADhChRriM&t=16s >
-    - using fetch < https://www.youtube.com/watch?v=Oage6H4GX2o >
-- Any open-source libraries or frameworks  
-- Any special mentions for contributors, teammates, or mentors  
+- Tutorials or articles:
+    - Quiz on js - [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s)
+    - Using json - [Learn JSON in 10 Minutes](https://www.youtube.com/watch?v=iiADhChRriM&t=16s)
+    - Using fetch - [Read JSON File into HTML with JavaScript Fetch API](https://www.youtube.com/watch?v=Oage6H4GX2o)
+    - How to use React - [Built-in React Components](https://react.dev/reference/react)
+
 
 ### Media 
 
 - Photos for recipes: 
-  - Pexels < https://www.pexels.com >
-  - Wikimedia Commons < https://commons.wikimedia.org/wiki/Main_Page >
+  - [Pexels](https://www.pexels.com)
+  - [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
 - Colour palette combinations: 
-  - <  https://colorkit.co/palettes/christmas/ >
-  - < https://colorhunt.co/palettes/christmas >
-
+  - [Colorkit](https://colorkit.co/palettes/christmas/)
+  - [Colorhunt](https://colorhunt.co/palettes/christmas)
+- Favicon is from [Svgrepo](https://www.svgrepo.com/).
 ---

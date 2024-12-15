@@ -23,7 +23,7 @@
             "Allow the panettone to cool completely before slicing and serving."
         ],
         "image": [
-            "../public/images/pexels-tatianeherder-10530448.jpg"
+            "/images/pexels-tatianeherder-10530448.jpg"
         ]
     },
     "2": {
@@ -81,7 +81,7 @@
             "Place the cookies on a baking sheet lined with parchment paper and bake for 10 to 12 minutes. Let them cool completely before glazing with icing or melted chocolate, if desired."
         ],
         "image": [
-            "../public/images/pexels-leefinvrede-29543318.jpg"
+            "/images/pexels-leefinvrede-29543318.jpg"
         ]
     },
     "5": {
@@ -136,7 +136,7 @@
             "Let the bibingka cool slightly before serving. It's best enjoyed warm with additional butter or grated coconut, if desired."
         ],
         "image": [
-            "../public/images/bibinka.jpg"
+            "/images/bibinka.jpg"
         ]
     },
     "8": {
@@ -187,7 +187,7 @@
             "Serve immediately and enjoy while hot."
         ],
         "image": [
-            "../public/images/pexels-matreding-10725922.jpg"
+            "/images/pexels-matreding-10725922.jpg"
         ]
     },
     "11": {
@@ -241,7 +241,7 @@
             "Serve in glasses, topped with a sprinkle of freshly grated nutmeg."
         ],
         "image": [
-            "../public/images/pexels-jill-wellington-1638660-3309793.jpg"
+            "/images/pexels-jill-wellington-1638660-3309793.jpg"
         ]
     },
     "14": {
@@ -293,7 +293,7 @@
             "Pour the hot chocolate into mugs and top with whipped cream or marshmallows. Serve immediately."
         ],
         "image": [
-            "../public/images/pexels-pixabay-33156.jpg"
+            "/images/pexels-pixabay-33156.jpg"
         ]
     },
     "17": {
@@ -351,7 +351,7 @@
             "Transfer the log to a serving platter and dust with cocoa powder to serve."
         ],
         "image": [
-            "../public/images//pexels-ekaterina-bolovtsova-5702930.jpg"
+            "/images//pexels-ekaterina-bolovtsova-5702930.jpg"
         ]
     },
     "20": {
@@ -404,7 +404,7 @@
             "If desired, add brandy and stir to combine.",
             "Strain the mulled wine and serve hot, garnished with extra orange slices and cinnamon sticks if desired."
         ],
-        "image": "../public/images/pexels-george-dolgikh-551816-1666061.jpg"
+        "image": "/images/pexels-george-dolgikh-551816-1666061.jpg"
     },
     "23": {
         "type": "trivia",

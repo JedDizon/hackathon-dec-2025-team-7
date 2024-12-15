@@ -1,7 +1,8 @@
 .recipe-image {
-    width: 50%;
+    width: 20%;
     height: auto;
     margin: 20px 0;
+    
 }
 
 .hidden {
@@ -9,11 +10,17 @@
 }
 
 body {
-    background-color: greenyellow;
+    background-color: greenyellow;  
 }
 
 .recipe-content {
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
 }
 
 .trivia-content {

@@ -1,10 +1,20 @@
 import { useState, useEffect } from "react";
 import Home from "./components/Home";
 import Doors from "./components/Doors";
+import Popup from "./components/Popup";
 import "./assets/styles/HomeDoors.css";
 
 function App() {
     const [days, setDays] = useState([]);
+    const [popupData, setPopupData] = useState(null);
+    const [surprises, setSurprises] = useState(null);
+
+    useEffect(() => {
+        fetch("/surprises.json")
+            .then(response => response.json())
+            .then(data => setSurprises(data))
+            .catch(error => console.error("Error fetching surprises:", error));
+    }, []);
 
     function saveDaysToLocalStorage(openedDays) {
         localStorage.setItem("days", JSON.stringify(openedDays));
@@ -30,10 +40,21 @@ function App() {
         setDays(storedDays);
     }, []);
 
+    const handleClosePopup = () => {
+        setPopupData(null);
+    }
+
+    const handleOpenPopup = (day) => {
+        if(surprises) {
+            setPopupData(surprises[day]);
+        }
+    }
+
     return (
         <>
         <Home />
-        <Doors updateDays={updateDays} days={days}/>
+        <Doors updateDays={updateDays} days={days} onOpenPopup={handleOpenPopup}/>
+        {popupData && <Popup data={popupData} onClose={handleClosePopup}/>}
         </>
     )
 }

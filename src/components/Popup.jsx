@@ -9,6 +9,8 @@ const Popup = ({ data, onClose }) => {
 
     const isCorrect = (event, correct) => {
         const answer = event.target;
+        answer.classList.add("after-answer");
+
 
         if (correct) {
             answer.classList.add("correct");
@@ -64,7 +66,7 @@ const Popup = ({ data, onClose }) => {
             {data.type === "quiz" && (
                 <div className="quiz-content">
                     <h3>{data.question || "No question provided"}</h3>
-                    <div>
+                    <div className="quiz-answers">
                         {data.answers.map((answer, index) =>
                             <button
                                 key={index}

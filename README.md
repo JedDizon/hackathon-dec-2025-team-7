@@ -27,25 +27,8 @@ This project was deployed on [Netlify](https://www.netlify.com/). The steps to d
 
 - Press *Deploy -repo name-* and wait until it has finished.
 
-#### Steps
-
-**Instructions copied from CodeInstitute Instructions - The benefits of early deployment**
-
-1. Go to the **Settings** tab of your GitHub repo.
-2. On the left-hand sidebar, in the **Code and automation** section, select **Pages**.
-3. Make sure:
-
-    1. **Source** is set to 'Deploy from Branch'.
-    2. **Main branch** is selected.
-    3. **Folder** is set to / (root).
-
-4. Under Branch, click **Save**.
-5. Go back to the **Code** tab. Wait a few minutes for the build to finish and **refresh your repo**.
-6. On the right-hand side, in the **Environments** section, click on 'github-pages'.
-7. Click **View deployment** to see the live site. 
-
-The project is deployed and can be accessed at:  
-**https://jeddizon.github.io/hackathon-dec-2025-team-7/**  
+The project is deployed and can be accessed at: 
+**https://countdown-to-xmas-2025.netlify.app**  
 
 ---
 
@@ -95,7 +78,19 @@ The **Goal** section provides a concise summary of the main objective or purpose
 ## **🌟 Credits**  
 In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
 - Any tutorials or articles referenced  
+    - quiz on js < https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s >
+    - using json < https://www.youtube.com/watch?v=iiADhChRriM&t=16s >
+    - using fetch < https://www.youtube.com/watch?v=Oage6H4GX2o >
 - Any open-source libraries or frameworks  
 - Any special mentions for contributors, teammates, or mentors  
+
+### Media 
+
+- Photos for recipes: 
+  - Pexels < https://www.pexels.com >
+  - Wikimedia Commons < https://commons.wikimedia.org/wiki/Main_Page >
+- Colour palette combinations: 
+  - <  https://colorkit.co/palettes/christmas/ >
+  - < https://colorhunt.co/palettes/christmas >
 
 ---

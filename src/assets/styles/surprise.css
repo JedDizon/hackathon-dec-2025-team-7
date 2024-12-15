@@ -1,3 +1,29 @@
+/*Root for popups*/
+:root {
+    /*Trivia*/
+    --primary-trivia: #116f54;
+    --secondary-trivia: #87c38f;
+    --tertiary-trivia: #43291f;
+    --quaternary-trivia: #da2c38;
+    --quinary-trivia: #f4f0bb;
+    /*Quiz*/
+    --primary-quiz: #8a1515;
+    --secondary-quiz: #e81d1d;
+    --tertiary-quiz: #fcfcfc;
+    --quaternary-quiz: #184e07;
+    --quinary-quiz: #0b912a;
+    /*Recipe*/
+    --primary-recipe: #2f4f4f;
+    --secondary-recipe: #8b4513;
+    --tertiary-recipe: #cd853f;
+    --quaternary-trivia: #a0522d;
+    --quinary-recipe: #f5deb3;
+    /* Doors */
+    --opened-doors: rgb(160, 35, 52);
+    --closed-doors: rgba(255, 238, 173, 0.5);
+}
+
+
 /* General popup style */
 .popup-overlay {
     position: fixed;
@@ -14,51 +40,116 @@
 
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background-color: var(--secondary-recipe);
+    color: var(--quinary-recipe);
+    border-radius: 10px;
 }
 
 /* Popup with recipe */
-.recipe-image {
-    width: 20%;
-    height: auto;
-    margin: 20px 0;
-    
+.recipe-content {
+    background-color: var(--quinary-recipe); 
+    border-left: 5px solid #ffa500; 
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    overflow-y: auto;
 }
 
 .recipe-image-div {
-
+    width: 100%;
+    display: flex;
+    justify-content: center; 
 }
 
-.recipe-content {
-    background-color: aqua;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
+.recipe-image {
+    width: 100%; 
+    max-width: 300px;
+    margin: 20px 0;
+    padding: 0 2.5em;
+    border-radius: 100px;
 }
 
 .recipe-details {
+    width: 100%;
+    padding: 2em 2.5em;
+    font-size: larger;
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    align-items: center; 
+}
 
+.recipe-content li {
+    color: var(--secondary-recipe)
+}
+
+.recipe-content h3, h4 {
+    color: var(--secondary-recipe);
+}
+.recipe-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.recipe-content ol {
+    padding-left: 20px;
+    margin: 10px 0;
 }
 
 /* Popup with trivia */
 .trivia-content {
-    background-color: aquamarine;
+    background-color: var(--secondary-trivia); 
+    border-left: 5px solid var(--tertiary-trivia); 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.trivia-content h3 {
+    color: var(--tertiary-trivia);
+}
+.trivia-content p {
+    font-style: italic;
+    color: var(--quaternary-trivia); 
 }
 
 /* Popup with quiz */
 .quiz-content {
-    background-color: bisque;
+    background-color: var(--tertiary-quiz);
+    border-left: 5px solid var(--secondary-quiz);
+    padding: 15px;
+    border-radius: 8px;
 }
+
+.quiz-content h3 {
+    color: var(--secondary-quiz);
+}
+
+.quiz-answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 .quiz-answer-button {
-    background-color: blueviolet;
+    background-color: var(--quaternary-quiz);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.quiz-answer-button:hover {
+    background-color: var(--quinary-quiz);
 }
 
 .correct {
@@ -71,9 +162,16 @@
     color: white;
 }
 
+.after-answer {
+    pointer-events: none;
+    cursor: none;
+    opacity: 0.5;
+}
+
 .answer-details {
 
 }
+
 
 /* Background style */
 
@@ -89,22 +187,37 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: coral;
     position: relative;
     overflow-y: auto;
 }
 
+.calendar {
+    background-color: rgba(255, 127, 80, 0.8);
+    text-align: center;
+    line-height: 25px;
+}
+
+.calendar h1 {
+    padding-top: 20px;
+}
+
+.calendar h2 {
+    padding-bottom: 10px;
+}
+
 /* Style for the container of the doors */
 .doors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    margin-top: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
+    width: 90%;
     overflow-y: auto;
     max-height: 100vh;
 }
@@ -116,15 +229,41 @@ body, html {
     align-items: center;
     width: 100px;
     height: 120px;
-    background-color: rgba(255, 238, 173, 0.5);
+    background-color: var(--closed-doors);
     border: 2px solid black;
     color: black;
     margin: 10px;
     font-size: xx-large;
+    border-radius: 8px;
+}
+
+.active:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* Style for the door/button when it is clicked */
 .opened {
-    background-color: rgb(160, 35, 52);
+    background-color: var(--opened-doors);
+}
+
+@media screen and (min-width: 768px) {
+
+    .recipe-content {
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    .recipe-image-div, .recipe-details {
+        width: 45%; /* Make each take up 50% of the container */
+        padding: 1em; /* Optional padding for spacing */
+    }
+
+    .recipe-image {
+        max-width: 100%;
+    }
+
+    .doors {
+        margin-top: 50px;
+    }
 }

@@ -30,8 +30,9 @@ const Doors = ({ updateDays, days, onOpenPopup }) => {
                 return (
                     <button key={day} 
                     onClick={(event) => handleClick(event, day)} 
-                    className={`door ${isOpened ? 'opened' : ''}`} 
+                    className={`door ${isOpened ? 'opened' : ''} ${day <= currentDay ? 'active' : ''}`} 
                     data-clicked={isOpened ? "true" : "false"}> 
+                    {day <= currentDay ? "" : "🔒"}
                     {day} 
                     </button>
                 )

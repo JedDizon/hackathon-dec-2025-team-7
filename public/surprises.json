@@ -55,7 +55,8 @@
                 "text": "Russia",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "The tradition of decorating Christmas trees started in 16th-century Germany, where devout Christians brought decorated trees into their homes, often adorned with candles."
     },
     "4": {
         "type": "recipe",
@@ -113,7 +114,8 @@
                 "text": "France",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "La Nochebuena translates to 'The Good Night' and is a major Spanish tradition marked by midnight mass (Misa del Gallo) and a feast with family."
     },
     "7": {
         "type": "recipe",
@@ -168,7 +170,8 @@
                 "text": "Tokyo",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "The McCallisters head to Paris, leaving Kevin behind, setting the stage for his ingenious defense against two bungling burglars."
     },
     "10": {
         "type": "recipe",
@@ -219,7 +222,8 @@
                 "text": "Krampus",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "According to Italian folklore, La Befana delivers gifts on January 6th, flying on her broomstick, as she searches for the Christ child."
     },
     "13": {
         "type": "recipe",
@@ -273,7 +277,8 @@
                 "text": "Jingle Bells",
                 "correct": true
             }
-        ]
+        ],
+        "answer-details": "Written in 1857 by James Lord Pierpont, 'Jingle Bells' was intended for Thanksgiving, celebrating sleigh rides and festive cheer."
     },
     "16": {
         "type": "recipe",
@@ -325,7 +330,8 @@
                 "text": "Northville",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "In The Polar Express, the journey takes children to the magical Winter Wonderland, located at the North Pole, where Santa prepares for Christmas."
     },
     "19": {
         "type": "recipe",
@@ -383,7 +389,8 @@
                 "text": "Yule Goat",
                 "correct": true
             }
-        ]
+        ],
+        "answer-details": "The Yule Goat, a centuries-old Scandinavian symbol of fertility and protection, is often crafted from straw and displayed as a festive ornament."
     },
     "22": {
         "type": "recipe",
@@ -435,6 +442,7 @@
                 "text": "Sleeping Beauty",
                 "correct": false
             }
-        ]
+        ],
+        "answer-details": "Composed by Tchaikovsky, The Nutcracker has become a beloved holiday classic, featuring the enchanting journey of Clara and her nutcracker prince."
     }
 }

@@ -1,34 +1,106 @@
-.recipe-image {
-    width: 50%;
-    height: auto;
-    margin: 20px 0;
-}
-
-.hidden {
-    display: none;
-}
-
 body {
     background-color: greenyellow;
 }
 
-.recipe-content {
-    background-color: aqua;
+/*Root for popups*/
+:root {
+    /*Trivia*/
+    --primary-trivia: #116f54;
+    --secondary-trivia: #87c38f;
+    --tertiary-trivia: #43291f;
+    --quaternary-trivia: #da2c38;
+    --quinary-trivia: #f4f0bb;
+    /*Quiz*/
+    --primary-quiz: #8a1515;
+    --secondary-quiz: #e81d1d;
+    --tertiary-quiz: #fcfcfc;
+    --quaternary-quiz: #184e07;
+    --quinary-quiz: #0b912a;
+    /*Recipe*/
+    --primary-recipe: #2f4f4f;
+    --secondary-recipe: #8b4513;
+    --tertiary-recipe: #cd853f;
+    --quaternary-trivia: #a0522d;
+    --quinary-recipe: #f5deb3;
 }
 
+/*Trivia*/
 .trivia-content {
-    background-color: aquamarine;
+    background-color: var(--secondary-trivia); 
+    border-left: 5px solid var(--tertiary-trivia); 
+    padding: 15px;
+    border-radius: 8px;
 }
+.trivia-content h3 {
+    color: var(--tertiary-trivia);
+}
+.trivia-content p {
+    font-style: italic;
+    color: var(--quaternary-trivia); 
+}
+
+/*Quiz*/
 .quiz-content {
-    background-color: bisque;
+    background-color: var(--tertiary-quiz);
+    border-left: 5px solid var(--secondary-quiz);
+    padding: 15px;
+    border-radius: 8px;
+}
+.quiz-content h3 {
+    color: var(--secondary-quiz);
 }
 .quiz-answers {
-    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
 }
 .quiz-answer-button {
-    background-color: chocolate;
+    background-color: var(--quaternary-quiz);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.quiz-answer-button:hover {
+    background-color: var(--quinary-quiz);
 }
 
+
+/*Recipe*/
+.recipe-image {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0 2.5em;
+}
+
+.recipe-content {
+    background-color: var(--quinary-recipe); 
+    border-left: 5px solid #ffa500; 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.recipe-content li {
+    color: var(--secondary-recipe)
+}
+
+.recipe-content h3, h4 {
+    color: var(--secondary-recipe);
+}
+.recipe-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.recipe-content ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+
+/*
 .correct {
     background-color: green;
     color: aliceblue;
@@ -38,3 +110,4 @@ body {
     background-color: red;
     color: white;
 }
+    */

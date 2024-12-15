@@ -1,3 +1,28 @@
+/* General popup style */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Popup with recipe */
 .recipe-image {
     width: 20%;
     height: auto;
@@ -5,12 +30,8 @@
     
 }
 
-.hidden {
-    display: none;
-}
+.recipe-image-div {
 
-body {
-    background-color: greenyellow;  
 }
 
 .recipe-content {
@@ -23,17 +44,21 @@ body {
     padding-left: 20px;
 }
 
+.recipe-details {
+
+}
+
+/* Popup with trivia */
 .trivia-content {
     background-color: aquamarine;
 }
+
+/* Popup with quiz */
 .quiz-content {
     background-color: bisque;
 }
-.quiz-answers {
-    background-color: blueviolet;
-}
 .quiz-answer-button {
-    background-color: chocolate;
+    background-color: blueviolet;
 }
 
 .correct {
@@ -46,16 +71,30 @@ body {
     color: white;
 }
 
-/* background style */
+.answer-details {
+
+}
+
+/* Background style */
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .home{
     height: 100vh;
     width: 100vw;
+    background-image: url("/images/xmas-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: coral;
     position: relative;
     overflow-y: auto;
 }
 
-/* style for the container of the doors */
+/* Style for the container of the doors */
 .doors {
     display: flex;
     flex-wrap: wrap;
@@ -70,50 +109,22 @@ body {
     max-height: 100vh;
 }
 
-/* style for the door/button when it is not clicked */
+/* Style for the door/button when it is not clicked */
 .door {
-    width: 100px;
-    height: 120px;
-    background-color: #f4f4f4;
-    color: black;
-    margin: 10px;
-    
-}
-
-/* style for the door/button when it is clicked */
-.opened {
-    background-color: brown;
-}
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-}
-
-.popup-content {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 500px;
-    max-height: 80vh;
-    overflow-y: auto;
-    position: relative;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    width: 100px;
+    height: 120px;
+    background-color: rgba(255, 238, 173, 0.5);
+    border: 2px solid black;
+    color: black;
+    margin: 10px;
+    font-size: xx-large;
     cursor: pointer;
+}
+
+/* Style for the door/button when it is clicked */
+.opened {
+    background-color: rgb(160, 35, 52);
 }

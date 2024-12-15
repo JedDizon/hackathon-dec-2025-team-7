@@ -1,13 +1,31 @@
 # 🎅✨ Hack the Holidays! 🎄🎁  
 
-## Team 7: Codin' around the Christmas Tree
+## Team 7: Codin' around the Christmas Three
 
 ---
 
 ## **🎄 Hack the Holidays: Submission Details**  
 
 ### **Deployment**  
-This project was deployed on Github. The site to deploy can be read below:
+This project was deployed on [Netlify](https://www.netlify.com/). The steps to deploy can be read below:
+- Clone the repo into your own GitHub account using the command `git clone https://github.com/JedDizon/hackathon-dec-2025-team-7.git` on the terminal;
+- Create an account on Netlify page;
+- On the main page, click on "Add new site" and then on import existing project;
+
+![Add new site and import existing project buttons](/docs/images/step1.png)
+- Connect Netlify to your GitHub account;
+
+![Buttons of different version control tools](/docs/images/step2.png)
+
+- Search for the project name and click on it;
+
+![Search your repos input filed](/docs/images/step3.png)
+
+- Choose a name for the page and check if _Build command_ is set to **npm run build** and _Publish directory_ is **dist** ;
+
+![Build command and Publish directory fields](/docs/images/step4.png)
+
+- Press *Deploy -repo name-* and wait until it has finished.
 
 #### Steps
 

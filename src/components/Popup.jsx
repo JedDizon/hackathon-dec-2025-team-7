@@ -2,14 +2,14 @@ import React from "react";
 import { useState } from "react";
 import "../assets/styles/surprise.css";
 
-const Popup = ( { data, onClose }) => {
+const Popup = ({ data, onClose }) => {
     if (!data) return null;
 
     const [answered, setAnswered] = useState(false);
 
     const isCorrect = (event, correct) => {
         const answer = event.target;
-      
+
         if (correct) {
             answer.classList.add("correct");
         } else {
@@ -57,7 +57,7 @@ const Popup = ( { data, onClose }) => {
             {data.type === "trivia" && (
                 <div className="trivia-content">
                     <h3>{data.name || "No name provided"}</h3>
-                    <p>{data.details ? data.details[0] : 'No details available' }</p>
+                    <p>{data.details ? data.details[0] : 'No details available'}</p>
                 </div>
             )}
 
@@ -66,14 +66,23 @@ const Popup = ( { data, onClose }) => {
                     <h3>{data.question || "No question provided"}</h3>
                     <div>
                         {data.answers.map((answer, index) =>
-                        <button 
-                        key={index} 
-                        className="quiz-answer-button"
-                        onClick={(event) => isCorrect(event, answer.correct)} 
-                        disabled={answered}>
-                            {answer.text}
-                        </button>)}
+                            <button
+                                key={index}
+                                className="quiz-answer-button"
+                                onClick={(event) => {
+                                    isCorrect(event, answer.correct);
+                                    setAnswered(true); // Tracks if a question has been answered
+                                }}
+                                disabled={answered}>
+                                {answer.text}
+                            </button>)}
                     </div>
+                    {/* Display the answer-details after the question is answered */}
+                    {answered && (
+                        <div className="answer-details">
+                            <p>{data["answer-details"]}</p>
+                        </div>
+                    )}
                 </div>
             )}
         </div>

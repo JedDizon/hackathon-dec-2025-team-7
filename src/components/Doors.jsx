@@ -9,7 +9,9 @@ const Doors = ({ updateDays, days, onOpenPopup }) => {
     const handleClick = (event, day) => {
         const button = event.target;
 
-        onOpenPopup(day);
+         if(day <= currentDay) {
+            onOpenPopup(day);
+        }
 
         if(button.dataset.clicked === "false" && day <= currentDay) {
             button.dataset.clicked = "true";

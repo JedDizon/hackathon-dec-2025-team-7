@@ -138,6 +138,22 @@ The site was tested on the below browsers:
 
 ---
 
+### W3C HTML Validation
+
+![W3C HTML Validation](IMAGE TO UPDATE)
+
+Link to validator results: < TO UPDATE >
+
+### W3C CSS Validation
+
+![W3C CSS Validation](public/images/cd-to-xmas-cssvalidator.png)
+
+### Lighthouse testing
+
+![Lighthouse Results](public/images/cd-to-xmas-lighthouse.png)
+
+---
+
 ## **🌟 Credits**  
 In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
 - Tutorials or articles:

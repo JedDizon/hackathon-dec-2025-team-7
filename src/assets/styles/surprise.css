@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Faculty+Glyphic&display=swap');
+
 /*Root for popups*/
 :root {
     /*Trivia*/
@@ -21,6 +23,10 @@
     /* Doors */
     --opened-doors: rgb(160, 35, 52);
     --closed-doors: rgba(255, 238, 173, 0.8);
+    /* Fonts */
+    --title-font: 'Ballet', cursive;
+    --body-font: 'Faculty Glyphic', sans-serif;
+
 }
 
 
@@ -41,7 +47,7 @@
 .close-button {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -54,7 +60,7 @@
 .close-button.trivia {
     background-color: var(--tertiary-trivia);
     color: var(--quinary-trivia);
-    top: 25%;
+    top: 18%;
     right: 40px;
 }
 
@@ -192,7 +198,7 @@
 }
 
 .answer-details {
-
+    padding: 10px;
 }
 
 
@@ -201,6 +207,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  font-family: var(--body-font);
 }
 
 .home{
@@ -221,7 +228,11 @@ body, html {
 }
 
 .calendar h1 {
-    padding-top: 20px;
+    padding-top: 0.7em;
+    font-family: var(--title-font);
+    font-size: 3em;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .calendar h2 {

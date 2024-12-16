@@ -140,9 +140,9 @@ The site was tested on the below browsers:
 
 ### W3C HTML Validation
 
-![W3C HTML Validation](IMAGE TO UPDATE)
+![W3C HTML Validation](public/images/cd-to-xmas-htmlvalidator.png)
 
-Link to validator results: < TO UPDATE >
+Link to validator results: [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcountdown-to-xmas-2024.netlify.app)
 
 ### W3C CSS Validation
 

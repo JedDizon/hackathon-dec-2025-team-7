@@ -1,6 +1,6 @@
 # 🎅✨ Hack the Holidays! 🎄🎁  
 
-## Team 7: Codin' around the Christmas Three
+## Team 7: Codin' around the Christmas Tree
 
 ---
 

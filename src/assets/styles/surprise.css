@@ -181,6 +181,10 @@
     background-color: var(--quinary-quiz);
 }
 
+.quiz-answer-button:focus {
+    outline: none;
+}
+
 .correct {
     background-color: green;
     color: aliceblue;
@@ -194,7 +198,7 @@
 .after-answer {
     pointer-events: none;
     cursor: none;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .answer-details {

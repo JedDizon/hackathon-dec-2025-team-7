@@ -6,27 +6,20 @@ const Popup = ({ data, onClose }) => {
     if (!data) return null;
 
     const [answered, setAnswered] = useState(false);
+    const [correctAnswerIndex, setCorrectAnswerIndex] = useState(null);
+    const [clickedAnswerIndex, setClickedAnswerIndex] = useState(null);
 
-    const isCorrect = (event, correct) => {
-        const answer = event.target;
-        answer.classList.add("after-answer");
-
-
-        if (correct) {
-            answer.classList.add("correct");
-        } else {
-            answer.classList.add("incorrect");
-        }
-
-        const allButtons = document.querySelectorAll(".quiz-answer-button");
-        allButtons.forEach(button => {
-            const answer = data.answers.find(answer => answer.text === button.textContent);
-            if (answer && answer.correct) {
-                button.classList.add("correct");  // Correct answer should always be green
-            }
-        });
+    const isCorrect = (index, correct) => {
 
         setAnswered(true);
+         setClickedAnswerIndex(index);
+        if(correct) {
+            setCorrectAnswerIndex(index);
+        }
+        else {
+            const correctIndex = data.answers.findIndex(answer => answer.correct);
+            setCorrectAnswerIndex(correctIndex);
+        }
     }
 
     return (
@@ -70,12 +63,12 @@ const Popup = ({ data, onClose }) => {
                         {data.answers.map((answer, index) =>
                             <button
                                 key={index}
-                                className="quiz-answer-button"
-                                onClick={(event) => {
-                                    isCorrect(event, answer.correct);
-                                    setAnswered(true); // Tracks if a question has been answered
-                                }}
-                                disabled={answered}>
+                                className={`quiz-answer-button 
+                                    ${answered ? 'after-answer' : ''}
+                                    ${answered && index === correctAnswerIndex ? 'correct' : ''} 
+                                    ${answered && index === clickedAnswerIndex && !answer.correct ? 'incorrect' : ''}`}
+                            onClick={() => isCorrect(index, answer.correct)}
+                            disabled={answered}>
                                 {answer.text}
                             </button>)}
                     </div>

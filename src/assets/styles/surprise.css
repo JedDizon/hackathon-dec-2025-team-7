@@ -265,6 +265,15 @@ body, html {
     transform: scale(1.1);
 }
 
+.deactive {
+    display: flex;
+    flex-direction: column;
+}
+
+.door-lock{
+    font-size: large;
+}
+
 /* Style for the door/button when it is clicked */
 .opened {
     background-color: var(--opened-doors);
@@ -293,6 +302,11 @@ body, html {
 
     .door {
         margin: 20px;
+    }
+
+    .close-button:hover {
+        transform: translateY(2px);
+        box-shadow: black 0px 0px 2px;
     }
 
     .close-button.trivia {

@@ -211,15 +211,15 @@ body, html {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 10px;
     justify-items: center;
-    margin-top: 40%;
     position: absolute;
+    margin-top: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     width: 90%;
     overflow-y: auto;
-    max-height: 100vh;
+    max-height: 700px;
 }
 
 /* Style for the door/button when it is not clicked */
@@ -261,9 +261,5 @@ body, html {
 
     .recipe-image {
         max-width: 100%;
-    }
-
-    .doors {
-        margin-top: 50px;
     }
 }

@@ -75,6 +75,85 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 ---
 
+### Future Features
+
+See below future features to be implemented:
+
+1. Animations for doors opening
+2. More / different surprises for the user i.e. mini game
+3. Ambient sounds i.e. sleigh bells
+4. Ambient animation on page ie snow falling down the screen
+
+---
+
+## Testing
+
+### Manual Testing
+
+Below are the details of manual tests conducted to ensure functionality:
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+| **Page link**   | User opens the page | **Home page** opens with all doors showing           | **SUCCESS** |
+| **Doors unlock each day**   | User opens the page on a new day | New door opens         | **SUCCESS** |
+| **Doors open to a surprise**   | User clicks on a door | Door open to show a surprise (Quiz, trivia, recipe)         | **SUCCESS** |
+| **Recipes styled**   | User opens recipe relevant door | Recipes are styled so that user can read and view ok        | **SUCCESS** |
+| **Trivia styled**   | User opens trivia relevant door | Trivia are styled so that user can read and view ok        | **SUCCESS** |
+| **Quiz styled**   | User opens quiz relevant door | Quiz are styled so that user can read and view ok        | **SUCCESS** |
+| **Answer buttons**   | User clicks on an **answer button** | Changes color to green or red depending if correct or incorrect answer        | **SUCCESS** |
+| **Close button "X"**   | User clicks on close button | Popup closes and brings user back to doors page        | **SUCCESS** |
+| **Site styled ok all devices**   | User opens the page on another device | Page is styled to work on all device sizes       | **SUCCESS** |
+| **Locked doors**   | User clicks on locked door | Nothing happens       | **SUCCESS** |
+
+---
+
+
+### Browser testing
+
+The site was tested on the below browsers:
+
+  - Chrome
+    - RESULT: 
+      - Doors: OK
+      - Quiz: OK
+      - Trivia: OK
+      - Recipe: OK
+      - Images: OK
+    
+  - Opera
+    - RESULT: 
+      - Doors: OK
+      - Quiz: OK
+      - Trivia: OK
+      - Recipe: OK
+      - Images: OK
+
+  - Firefox
+    - RESULT: 
+      - Doors: OK
+      - Quiz: OK
+      - Trivia: OK
+      - Recipe: OK
+      - Images: OK
+
+---
+
+### W3C HTML Validation
+
+![W3C HTML Validation](IMAGE TO UPDATE)
+
+Link to validator results: < TO UPDATE >
+
+### W3C CSS Validation
+
+![W3C CSS Validation](public/images/cd-to-xmas-cssvalidator.png)
+
+### Lighthouse testing
+
+![Lighthouse Results](public/images/cd-to-xmas-lighthouse.png)
+
+---
+
 ## **🌟 Credits**  
 In the **Credits** section, we acknowledge the resources, tools, or inspirations used in this project, such as:  
 - Tutorials or articles:

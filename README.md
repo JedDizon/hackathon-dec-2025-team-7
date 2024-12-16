@@ -93,4 +93,5 @@ In the **Credits** section, we acknowledge the resources, tools, or inspirations
   - [Colorkit](https://colorkit.co/palettes/christmas/)
   - [Colorhunt](https://colorhunt.co/palettes/christmas)
 - Favicon is from [Svgrepo](https://www.svgrepo.com/).
+- Background image is from [Pexels](https://www.pexels.com/)
 ---

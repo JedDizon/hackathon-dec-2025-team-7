@@ -31,7 +31,7 @@ const Popup = ({ data, onClose }) => {
 
     return (
         <div className="popup-overlay">
-            <button className="close-button" onClick={onClose}>X</button>
+            <button className={`close-button ${data.type} ${answered ? 'answered' : ''}`} onClick={onClose}>X</button>
 
             {data.type === "recipe" && (
                 <div className="recipe-content">
